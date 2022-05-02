@@ -5,5 +5,3 @@ This repository contains all the code for the free Udacity class [ud405: 2D Game
 You can download this code using the green "Clone or download" button at the top left.
 
 Instructions for importing and running these projects can be found in the [1.2.01-Demo-GettingStartedWithLibGDX](https://github.com/udacity/ud405/tree/master/1.2.01-Demo-GettingStartedWithLibGDX) folder.
-
-Issues and pull requests welcome!
