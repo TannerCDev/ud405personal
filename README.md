@@ -1,7 +1,10 @@
 # 2D Game Development with LibGDX
 
-This repository contains all the code for the free Udacity class [ud405: 2D Game Development with LibGDX](https://www.udacity.com/course/2d-game-development-with-libgdx--ud405). These demos and exercises were designed to accompany the course, but are a fine learning resource in their own right.
+A personal fork of 2D Game Development with LibGDX by Udacity for use in learning LibGDX.
 
-You can download this code using the green "Clone or download" button at the top left.
 
-Instructions for importing and running these projects can be found in the [1.2.01-Demo-GettingStartedWithLibGDX](https://github.com/udacity/ud405/tree/master/1.2.01-Demo-GettingStartedWithLibGDX) folder.
+Credits to Udacity:
+
+https://www.udacity.com/course/2d-game-development-with-libgdx--ud405
+
+[1.2.01-Demo-GettingStartedWithLibGDX](https://github.com/udacity/ud405/tree/master/1.2.01-Demo-GettingStartedWithLibGDX)
