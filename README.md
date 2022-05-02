@@ -7,4 +7,4 @@ Credits to Udacity:
 
 https://www.udacity.com/course/2d-game-development-with-libgdx--ud405
 
-[1.2.01-Demo-GettingStartedWithLibGDX](https://github.com/udacity/ud405/tree/master/1.2.01-Demo-GettingStartedWithLibGDX)
+https://github.com/udacity/ud405
