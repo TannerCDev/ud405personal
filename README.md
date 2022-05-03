@@ -1,6 +1,6 @@
 # 2D Game Development with LibGDX
 
-A personal fork of 2D Game Development with LibGDX by Udacity for use in learning LibGDX.
+A personal fork of 2D Game Development with LibGDX by Udacity for use in learning LibGDX
 
 
 Credits to Udacity:
