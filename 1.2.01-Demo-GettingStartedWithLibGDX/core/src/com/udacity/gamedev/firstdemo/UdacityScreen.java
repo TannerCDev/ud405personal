@@ -40,8 +40,8 @@ public class UdacityScreen extends InputAdapter implements Screen {
     @Override
     public void render(float delta) {
 
-        // TODO: Make this UDACITY_BLUE instead
-        clearScreen(UDACITY_ORANGE);
+        // Changed from orange to blue
+        clearScreen(UDACITY_BLUE);
 
         batch.begin();
         batch.draw(logo,
