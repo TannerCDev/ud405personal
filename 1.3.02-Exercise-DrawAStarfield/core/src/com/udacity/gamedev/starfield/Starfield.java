@@ -7,6 +7,10 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 
+import java.util.Random;
+
+import static com.badlogic.gdx.math.MathUtils.random;
+
 /**
  * TODO: Start here!
  *
@@ -39,19 +43,27 @@ public class Starfield extends ApplicationAdapter {
 
     @Override
     public void create() {
-        // TODO: Initialize a shapeRenderer
-
-        // TODO: Call initStars
+        // TODO: Initialize a shapeRenderer - done
+        shapeRenderer = new ShapeRenderer();
+        // TODO: Call initStars - done
+        initStars((STAR_DENSITY));
 
     }
 
     public void initStars(float density) {
-        // TODO: Figure out how many stars to draw. You'll need the screen dimensions, which you can get using Gdx.graphics.getWidth() and Gdx.graphics.getHeight().
-
-        // TODO: Create a new array of Vector2's to hold the star positions
-
-        // TODO: Use java.util.Random to fill the array of star positions
-
+        // TODO: Figure out how many stars to draw. You'll need the screen dimensions, which you can get using Gdx.graphics.getWidth() and Gdx.graphics.getHeight(). - done
+        int screenWidth = Gdx.graphics.getWidth();
+        int screenHeight = Gdx.graphics.getHeight();
+        int starCount = (int) (screenHeight * screenWidth * density);
+        // TODO: Create a new array of Vector2's to hold the star positions - done
+        stars = new Array<Vector2>(starCount);
+        // TODO: Use java.util.Random to fill the array of star positions - done
+        Random random = new Random();
+        for (int i = 0; i < starCount; i++) {
+            int x = random.nextInt(screenWidth);
+            int y = random.nextInt(screenHeight);
+            stars.add(new Vector2(x, y));
+        }
     }
 
     @Override
@@ -62,22 +74,25 @@ public class Starfield extends ApplicationAdapter {
 
     @Override
     public void render() {
-        // TODO: Make the night sky black
-        Gdx.gl.glClearColor(1, 0, 0, 1);
+        // TODO: Make the night sky black - done
+        Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        // TODO: Begin a shapeRenderer batch using ShapeType.Point
-
-        // TODO: Loop through the star positions and use shapeRenderer to draw points
-
-        // TODO: End the shapeRenderer batch
-
+        // TODO: Begin a shapeRenderer batch using ShapeType.Point - done
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Point);
+        // TODO: Loop through the star positions and use shapeRenderer to draw points - done, made them yellow for fun
+        for (Vector2 star : stars){
+            shapeRenderer.setColor(1, 1, 0, 0);
+            shapeRenderer.point(star.x, star.y, 0);
+        }
+        // TODO: End the shapeRenderer batch - done
+        shapeRenderer.end();
     }
 
     @Override
     public void dispose() {
-        // TODO: Dispose of our ShapeRenderer
-
+        // TODO: Dispose of our ShapeRenderer - done
+        shapeRenderer.dispose();
         super.dispose();
     }
 }

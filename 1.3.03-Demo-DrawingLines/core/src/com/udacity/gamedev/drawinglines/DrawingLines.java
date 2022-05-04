@@ -32,7 +32,7 @@ public class DrawingLines extends ApplicationAdapter {
         shapeRenderer.dispose();
         super.dispose();
     }
-
+// did lesson, played with lines a little
     @Override
     public void render() {
         // As always, first we clear the screen
@@ -42,15 +42,15 @@ public class DrawingLines extends ApplicationAdapter {
         shapeRenderer.begin(ShapeType.Line);
         // A Simple white line
         shapeRenderer.setColor(Color.WHITE);
-        shapeRenderer.line(0, 0, 100, 100);
+        shapeRenderer.line(0, 0, 100, 200);
         // We can set different colors using two methods. We can use constants like so.
         shapeRenderer.setColor(Color.MAGENTA);
-        shapeRenderer.line(10, 0, 110, 100);
+        shapeRenderer.line(10, 0, 110, 200);
         // We can also set a color using RGBA values
         shapeRenderer.setColor(0, 1, 0, 1);
-        shapeRenderer.line(20, 0, 120, 100);
+        shapeRenderer.line(20, 0, 120, 200);
         // We can also do fancy things like gradients
-        shapeRenderer.line(30, 0, 130, 100, Color.BLUE, Color.RED);
+        shapeRenderer.line(30, 0, 130, 200, Color.BLUE, Color.RED);
         // The last interesting thing we can do is draw a bunch of connected line segments using polyline
         // First we set up the list of vertices, where the even positions are x coordinates, and the odd positions are the y coordinates
         float[] verticies = {100, 200, 300, 300, 200, 300, 300, 200};

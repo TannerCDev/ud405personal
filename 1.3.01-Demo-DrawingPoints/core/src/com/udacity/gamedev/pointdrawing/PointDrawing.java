@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 
+// learned this lesson
 /**
  * TODO: Start here to learn more about ApplicationListener and ShapeRenderer
  * <p>
