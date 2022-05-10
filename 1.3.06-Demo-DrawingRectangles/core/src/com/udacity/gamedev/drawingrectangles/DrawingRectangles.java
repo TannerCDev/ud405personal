@@ -27,6 +27,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
  * restriction, we can make a thick line out of a skinny filled in rectangle.
  */
 
+// I hath learned this lesson
 
 public class DrawingRectangles extends ApplicationAdapter {
 
